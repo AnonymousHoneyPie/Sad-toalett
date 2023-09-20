@@ -1,0 +1,24 @@
+#include <iostream>
+#include <windows.h>
+#include <random>
+
+
+
+int main() {
+
+    setlocale(LC_ALL, "Russian");
+    printf("%s", "                                    Hacking account (name)\n                                    Please wait 2 minutes\n");
+    printf("%c", '[');
+    
+    for (int i = 0; i <= 1000; i++) {
+
+        printf("%c", '|');
+        int num = 10 + rand() % (80 - 10 + 1);
+        Sleep(num);
+    }
+    
+    printf("%c", ']');
+    printf("\n");
+    printf("%s\n", "                                    Account (name) is hacked!!!!");
+    return 0;
+}
